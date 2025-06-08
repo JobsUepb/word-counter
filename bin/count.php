@@ -6,7 +6,7 @@ use Grupo3\WordCounter\Contador;
 use League\CLImate\CLImate;
 
 $climate = new CLImate();
-$climate->bold()->blue("Contador de Palavras - Grupo 3");
+$climate->bold()->blue("📘 Bem-vindo ao Contador de Palavras - Grupo 3 🚀");
 
 $caminho = $climate->lightGreen()->input("Digite o caminho do arquivo .txt:")->prompt();
 
