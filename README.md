@@ -1,3 +1,3 @@
-    # Edite bin/count.php para mudar cores
-    git add bin/count.php
-    git commit -m "feat: melhora cores da saída no terminal
+# Adicione nomes dos membros no README
+    git add README.md
+    git commit -m "docs: adiciona créditos dos autores
