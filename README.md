@@ -35,12 +35,12 @@ Execute os testes com PHPUnit:
 ./vendor/bin/phpunit tests/
 ```
 
-## 📁 Estrutura de Pastas
+##  Estrutura de Pastas
 - bin/ — Script principal
 - inputs/ — Arquivos de entrada
 - src/ — Código fonte
 - tests/ — Testes
 - vendor/ — Dependências gerenciadas pelo Composer
 
-## 👥 Equipe
+## Equipe
 Projeto colaborativo com GitHub Desktop, utilizando git-flow e versionamento semântico.
