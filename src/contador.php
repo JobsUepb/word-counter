@@ -1,30 +1,16 @@
 <?php
-namespace Grupo3\WordCounter;
 
+use Grupo3\WordCounter\Contador;
+use PHPUnit\Framework\TestCase;
 
-use Symfony\Component\Filesystem\Filesystem;
-
-
-class Contador
+class ContadorTest extends TestCase
 {
-    private Filesystem $filesystem;
-
-
-    public function __construct()
+    public function testContarPalavras()
     {
-        $this->filesystem = new Filesystem();
-    }
-
-
-    public function contarPalavras(string $caminhoArquivo): int
-    {
-        if (!$this->filesystem->exists($caminhoArquivo)) {
-            throw new \Exception("Arquivo não encontrado: $caminhoArquivo");
-        }
-
-
-        $conteudo = file_get_contents($caminhoArquivo);
-        $palavras = str_word_count($conteudo, 1);
-        return count($palavras);
+        $arquivo = __DIR__ . '/../inputs/exemplo.txt';
+        file_put_contents($arquivo, 'Olá mundo de testes!');
+        $contador = new Contador();
+        $this->assertEquals(4, $contador->contarPalavras($arquivo));
+        unlink($arquivo);
     }
 }
