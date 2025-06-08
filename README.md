@@ -1,3 +1,3 @@
-  # Edite README.md e adicione instruções
-    git add README.md
-    git commit -m "docs: adiciona instruções de instalação no README
+    # Edite bin/count.php para mudar cores
+    git add bin/count.php
+    git commit -m "feat: melhora cores da saída no terminal
