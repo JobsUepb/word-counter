@@ -13,9 +13,7 @@ $caminho = $climate->lightGreen()->input("Digite o caminho do arquivo .txt:")->p
 try {
     $contador = new Contador();
     $quantidade = $contador->contarPalavras($caminho);
-
     $climate->green("O arquivo contém $quantidade palavra(s).");
 } catch (Exception $e) {
     $climate->error("Erro: " . $e->getMessage());
 }
-
