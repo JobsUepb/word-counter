@@ -1,0 +1,4 @@
+/vendor/
+/inputs/*.txt
+/tests/
+/*.log
