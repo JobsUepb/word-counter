@@ -5,6 +5,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Grupo3\WordCounter\Contador;
 use League\CLImate\CLImate;
 
+$climate->br();
+$climate->border("📘 Bem-vindo ao Contador de Palavras - Grupo 3 🚀");
+$climate->br();
+
+
 $climate = new CLImate();
 $climate->bold()->blue("📘 Bem-vindo ao Contador de Palavras - Grupo 3 🚀");
 
