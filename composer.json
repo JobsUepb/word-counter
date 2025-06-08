@@ -1,0 +1,12 @@
+{
+  "name": "grupo3/word-counter",
+  "description": "Contador de palavras em arquivos .txt (CLI)",
+  "require": {
+    "league/climate": "^3.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grupo3\\WordCounter\\": "src/"
+    }
+  }
+}
