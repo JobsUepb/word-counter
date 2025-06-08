@@ -13,7 +13,7 @@ $climate->br();
 $climate = new CLImate();
 $climate->bold()->blue("📘 Bem-vindo ao Contador de Palavras - Grupo 3 🚀");
 
-$caminho = $climate->lightGreen()->input("Digite o caminho do arquivo .txt:")->prompt();
+$caminho = $climate->yellow()->input("📝 Por favor, digite o caminho do arquivo .txt que deseja analisar:")->prompt();
 
 try {
     $contador = new Contador();
